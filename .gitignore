@@ -1,0 +1,8 @@
+# Anotações internas do projeto (ficam só no computador)
+CLAUDE.md
+.claude/
+
+# Arquivos do sistema
+Thumbs.db
+desktop.ini
+.DS_Store

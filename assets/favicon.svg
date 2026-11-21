@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .bg { fill: #141414; }
+    .txt { fill: #f2efe9; }
+    .dot { fill: #e5481c; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #f1eee8; }
+      .txt { fill: #0e0e0d; }
+      .dot { fill: #ff6b3d; }
+    }
+  </style>
+  <rect class="bg" width="64" height="64" rx="14"/>
+  <text class="txt" x="7" y="43" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="-2">DC</text>
+  <circle class="dot" cx="53" cy="40" r="4"/>
+</svg>
