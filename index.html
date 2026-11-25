@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daniel Carvalho · Software Engineer</title>
-  <meta name="description" content="Portfólio de Daniel Carvalho, Software Engineer full-stack: aplicações web, integrações e performance com React, TypeScript e Node.js.">
+  <meta name="description" data-i18n-content="meta.description" content="Portfolio of Daniel Carvalho, full-stack Software Engineer: web applications, integrations and performance with React, TypeScript and Node.js.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +27,16 @@
     <nav class="nav">
       <a href="#topo" class="logo">DC<span>.</span></a>
       <div class="links">
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#contato" class="keep">Contato</a>
-        <button id="theme" aria-label="Alternar tema claro/escuro">◐</button>
+        <a href="#sobre" data-i18n="nav.about">About</a>
+        <a href="#servicos" data-i18n="nav.services">Services</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experience</a>
+        <a href="#contato" class="keep" data-i18n="nav.contact">Contact</a>
+        <div class="lang mono" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+          <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        </div>
+        <button id="theme" aria-label="Toggle light/dark theme" data-i18n-aria="aria.theme">◐</button>
       </div>
     </nav>
   </header>
@@ -43,67 +48,67 @@
 
         <!-- Topo -->
         <section class="hero" id="topo">
-          <p class="eyebrow mono"><span class="dot"></span> Aberto a oportunidades e projetos</p>
+          <p class="eyebrow mono" data-i18n-html="hero.eyebrow"><span class="dot"></span> Open to opportunities and projects</p>
           <h1 class="hero-title">
-            <span class="hero-line" data-dir="-1"><span class="hero-word">Daniel</span> <span class="hero-photo"><img src="assets/foto.png" alt="Foto de Daniel Carvalho" width="400" height="400"></span></span>
+            <span class="hero-line" data-dir="-1"><span class="hero-word">Daniel</span> <span class="hero-photo"><img src="assets/foto.png" alt="Photo of Daniel Carvalho" data-i18n-alt="alt.photo" width="400" height="400"></span></span>
             <span class="hero-line" data-dir="1"><span class="hero-word">Carvalho<span class="accent">.</span></span></span>
           </h1>
           <div class="hero-bottom">
             <p class="role mono" data-scramble>Software Engineer · Full-stack · Web</p>
-            <p class="lead">Desenvolvo funcionalidades, customizações e integrações com React, TypeScript e Node.js, com foco em performance e experiência do usuário.</p>
-            <p class="loc mono">Cachoeiras de Macacu, RJ · Brasil</p>
+            <p class="lead" data-i18n="hero.lead">I build features, customizations and integrations with React, TypeScript and Node.js, focused on performance and user experience.</p>
+            <p class="loc mono" data-i18n="hero.loc">Cachoeiras de Macacu, RJ · Brazil</p>
           </div>
-          <a href="#sobre" class="scroll-hint mono" aria-label="Rolar para Sobre mim">Role <span>↓</span></a>
+          <a href="#sobre" class="scroll-hint mono" aria-label="Scroll to About me" data-i18n-aria="aria.scroll" data-i18n-html="hero.scroll">Scroll <span>↓</span></a>
         </section>
 
         <!-- Faixa de tecnologias -->
-        <div class="marquee" aria-label="Tecnologias">
+        <div class="marquee" aria-label="Technologies" data-i18n-aria="aria.tech">
           <div class="marquee-track">
             <ul class="marquee-list">
               <li>React</li><li>Next.js</li><li>TypeScript</li><li>JavaScript</li><li>Node.js</li><li>VTEX IO</li><li>REST APIs</li>
-              <li>GraphQL</li><li>Integrações de sistemas</li><li>Core Web Vitals</li><li>HTML &amp; CSS/Sass</li><li>Git</li><li>IA aplicada ao desenvolvimento</li>
+              <li>GraphQL</li><li data-i18n="skills.integrations">System integrations</li><li>Core Web Vitals</li><li>HTML &amp; CSS/Sass</li><li>Git</li><li data-i18n="skills.ai">AI-assisted development</li>
             </ul>
           </div>
         </div>
 
         <!-- Sobre -->
         <section class="section" id="sobre">
-          <p class="label mono"><span>01</span> Sobre mim</p>
-          <p class="big-text" data-fill>Sou Software Engineer com mais de 5 anos de experiência em desenvolvimento web, construindo interfaces, integrações e serviços com React, TypeScript e Node.js. Boa parte dessa trajetória foi em e-commerce, onde me tornei referência técnica em VTEX no meu time, apoiando decisões técnicas, implementações e resolução de problemas em produção.</p>
-          <p class="about reveal">Antes do desenvolvimento, passei anos em infraestrutura e TI, o que me deu uma visão completa de sistemas, integrações e troubleshooting. Meu foco é construir soluções que resolvam problemas reais de negócio, e tenho interesse especial em usar Inteligência Artificial para desenvolver e automatizar de forma mais rápida e eficiente.</p>
+          <p class="label mono" data-i18n-html="about.label"><span>01</span> About me</p>
+          <p class="big-text" data-fill data-i18n="about.p1">I'm a Software Engineer with 5+ years of experience in web development, building interfaces, integrations and services with React, TypeScript and Node.js. Much of that journey has been in e-commerce, where I became the VTEX technical reference on my team, supporting technical decisions, implementations and troubleshooting in production.</p>
+          <p class="about reveal" data-i18n="about.p2">Before development, I spent years in IT infrastructure, which gave me a complete view of systems, integrations and troubleshooting. My focus is building solutions that solve real business problems, and I'm especially interested in using Artificial Intelligence to build and automate faster and more efficiently.</p>
         </section>
 
         <!-- Serviços: no desktop, a seção fica fixa e os cards correm na horizontal -->
         <section class="section services" id="servicos">
           <div class="services-pin">
             <div class="services-intro">
-              <p class="label mono"><span>02</span> O que eu faço</p>
-              <h2 class="title reveal">Onde mais gero valor em um projeto.</h2>
+              <p class="label mono" data-i18n-html="services.label"><span>02</span> What I do</p>
+              <h2 class="title reveal" data-i18n="services.title">Where I add the most value to a project.</h2>
             </div>
             <div class="services-track">
               <article class="service">
                 <span class="service-num mono">01</span>
-                <h3>Aplicações web</h3>
-                <p>Interfaces e funcionalidades com React, Next.js e TypeScript, incluindo lojas e apps customizados em plataformas como a VTEX IO.</p>
+                <h3 data-i18n="s1.t">Web applications</h3>
+                <p data-i18n="s1.d">Interfaces and features with React, Next.js and TypeScript, including stores and custom apps on platforms like VTEX IO.</p>
                 <div class="tags"><span>React</span><span>Next.js</span><span>TypeScript</span></div>
               </article>
               <article class="service">
                 <span class="service-num mono">02</span>
-                <h3>Integrações e APIs</h3>
-                <p>Integração entre sistemas via REST e GraphQL, automação de processos e serviços em Node.js.</p>
+                <h3 data-i18n="s2.t">Integrations & APIs</h3>
+                <p data-i18n="s2.d">System integrations via REST and GraphQL, process automation and Node.js services.</p>
                 <div class="tags"><span>Node.js</span><span>REST</span><span>GraphQL</span></div>
               </article>
               <article class="service">
                 <span class="service-num mono">03</span>
-                <h3>Performance</h3>
-                <p>Otimização de Core Web Vitals e da experiência do usuário em interfaces responsivas.</p>
+                <h3 data-i18n="s3.t">Performance</h3>
+                <p data-i18n="s3.d">Optimizing Core Web Vitals and user experience in responsive interfaces.</p>
                 <div class="tags"><span>Core Web Vitals</span><span>CSS/Sass</span></div>
               </article>
               <article class="service">
                 <span class="service-num mono">04</span>
-                <h3>IA no desenvolvimento</h3>
-                <p>Uso de Inteligência Artificial como ferramenta para construir e automatizar soluções com mais velocidade.</p>
-                <div class="tags"><span>IA</span><span>Automação</span></div>
+                <h3 data-i18n="s4.t">AI in development</h3>
+                <p data-i18n="s4.d">Using Artificial Intelligence as a tool to build and automate solutions faster.</p>
+                <div class="tags"><span data-i18n="s4.tag1">AI</span><span data-i18n="s4.tag2">Automation</span></div>
               </article>
             </div>
           </div>
@@ -111,61 +116,61 @@
 
         <!-- Experiência -->
         <section class="section" id="experiencia">
-          <p class="label mono"><span>03</span> Experiência</p>
-          <h2 class="title reveal">Minha trajetória até aqui.</h2>
+          <p class="label mono" data-i18n-html="exp.label"><span>03</span> Experience</p>
+          <h2 class="title reveal" data-i18n="exp.title">My journey so far.</h2>
           <ol class="jobs">
             <li class="job">
-              <span class="job-date mono">jun 2026 — atual</span>
+              <span class="job-date mono" data-i18n="job1.date">Jun 2026 — present</span>
               <div><h3>Software Engineer</h3><p class="job-company">Cadmus Soluções em TI</p></div>
-              <p class="job-desc">Desenvolvimento e evolução de soluções de e-commerce em VTEX IO: funcionalidades, customizações, integrações e melhorias contínuas. Referência técnica em VTEX no time.</p>
+              <p class="job-desc" data-i18n="job1.desc">Developing and evolving e-commerce solutions on VTEX IO: features, platform customizations, integrations and continuous improvements. VTEX technical reference on the team.</p>
             </li>
             <li class="job">
-              <span class="job-date mono">out 2024 — mar 2026</span>
+              <span class="job-date mono" data-i18n="job2.date">Oct 2024 — Mar 2026</span>
               <div><h3>Full-stack Developer</h3><p class="job-company">Cadastra</p></div>
-              <p class="job-desc">Soluções completas para e-commerce com VTEX IO, React, Node.js e TypeScript. Funcionalidades personalizadas, integrações com APIs, automação de processos e otimização de performance.</p>
+              <p class="job-desc" data-i18n="job2.desc">End-to-end e-commerce solutions with VTEX IO, React, Node.js and TypeScript. Custom features, API integrations, process automation and performance optimization.</p>
             </li>
             <li class="job">
-              <span class="job-date mono">abr 2021 — set 2023</span>
+              <span class="job-date mono" data-i18n="job3.date">Apr 2021 — Sep 2023</span>
               <div><h3>Front-end Developer</h3><p class="job-company">M3, a Cadastra Company</p></div>
-              <p class="job-desc">Desenvolvimento de lojas e-commerce em VTEX IO com interfaces interativas e responsivas, soluções personalizadas e foco em desempenho.</p>
+              <p class="job-desc" data-i18n="job3.desc">Built VTEX IO e-commerce stores with interactive, responsive interfaces, custom solutions and a focus on performance.</p>
             </li>
             <li class="job">
-              <span class="job-date mono">nov 2018 — nov 2020</span>
-              <div><h3>Analista de TI</h3><p class="job-company">Hospital Psiquiátrico Espírita Mahatma Gandhi</p></div>
-              <p class="job-desc">Planejamento, supervisão e suporte dos recursos de TI, sistemas de informação e soluções tecnológicas.</p>
+              <span class="job-date mono" data-i18n="job4.date">Nov 2018 — Nov 2020</span>
+              <div><h3 data-i18n="job4.role">IT Analyst</h3><p class="job-company">Hospital Psiquiátrico Espírita Mahatma Gandhi</p></div>
+              <p class="job-desc" data-i18n="job4.desc">Planning, supervision and support of IT resources, information systems and technology solutions.</p>
             </li>
             <li class="job">
-              <span class="job-date mono">jun 2013 — fev 2017</span>
-              <div><h3>Técnico de Redes</h3><p class="job-company">VGN Vista Group Network</p></div>
-              <p class="job-desc">Manutenção de hardware e software, redes, cabeamento estruturado e fibra óptica.</p>
+              <span class="job-date mono" data-i18n="job5.date">Jun 2013 — Feb 2017</span>
+              <div><h3 data-i18n="job5.role">Network Technician</h3><p class="job-company">VGN Vista Group Network</p></div>
+              <p class="job-desc" data-i18n="job5.desc">Hardware and software maintenance, networks, structured cabling and fiber optics.</p>
             </li>
           </ol>
         </section>
 
         <!-- Formação -->
         <section class="section" id="formacao">
-          <p class="label mono"><span>04</span> Formação e certificações</p>
+          <p class="label mono" data-i18n-html="edu.label"><span>04</span> Education &amp; certifications</p>
           <div class="edu">
             <article class="edu-item">
-              <h3>Sistemas de Informação</h3>
-              <p>Bacharelado em Sistemas da Informação, Redes de Sistemas e Telecomunicações · Cefet/RJ (2016 — 2020)</p>
+              <h3 data-i18n="edu.degree.t">Information Systems</h3>
+              <p data-i18n="edu.degree.d">Bachelor's in Information Systems, Systems Networks and Telecommunications · Cefet/RJ (2016 — 2020)</p>
             </article>
             <article class="edu-item">
-              <h3>Certificações</h3>
+              <h3 data-i18n="edu.certs.t">Certifications</h3>
               <p>VTEX IO Developer · HTML Web Developer · The Complete Full-Stack Web Development Bootcamp · Succeed in the Age of AI</p>
             </article>
             <article class="edu-item">
-              <h3>Idiomas</h3>
-              <p>Português (nativo) · Inglês (profissional completo) · Espanhol (básico profissional)</p>
+              <h3 data-i18n="edu.langs.t">Languages</h3>
+              <p data-i18n="edu.langs.d">Portuguese (native) · English (full professional) · Spanish (limited working)</p>
             </article>
           </div>
         </section>
 
         <!-- Contato -->
         <section class="section contact" id="contato">
-          <p class="label mono"><span>05</span> Contato</p>
-          <h2 class="contact-title">Vamos<br>conversar<span class="accent">?</span></h2>
-          <p class="about reveal">Aberto a oportunidades, projetos e conexões em desenvolvimento web, integrações, e-commerce e IA aplicada ao desenvolvimento.</p>
+          <p class="label mono" data-i18n-html="contact.label"><span>05</span> Contact</p>
+          <h2 class="contact-title" data-i18n-html="contact.title">Let's<br>talk<span class="accent">?</span></h2>
+          <p class="about reveal" data-i18n="contact.sub">Open to opportunities, projects and connections in web development, integrations, e-commerce and AI-assisted development.</p>
           <div class="btns reveal">
             <a class="btn primary" href="mailto:daniel.carvalho.ti@outlook.com">E-mail</a>
             <a class="btn" href="https://www.linkedin.com/in/danielcarvalhoti" target="_blank" rel="noopener">LinkedIn</a>
@@ -176,8 +181,8 @@
 
       <footer class="footer mono">
         <span>© <span id="y"></span> Daniel Carvalho</span>
-        <span>Feito com HTML, CSS e GSAP</span>
-        <a href="#topo">Voltar ao topo ↑</a>
+        <span data-i18n="footer.made">Built with HTML, CSS and GSAP</span>
+        <a href="#topo" data-i18n="footer.top">Back to top ↑</a>
       </footer>
     </div>
   </div>
@@ -187,6 +192,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
